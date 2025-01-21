@@ -18,12 +18,13 @@
             font-size: 5rem;
             text-shadow: 5px 5px 10px yellow, -5px -5px 10px cyan;
             animation: spin 5s linear infinite;
+            margin-bottom: 20px;
         }
         p {
             font-size: 2rem;
-            line-height: 0.5;
-            letter-spacing: 5px;
-            margin: 0 10%;
+            line-height: 2; /* Korrekte Zeilenhöhe */
+            letter-spacing: 3px;
+            margin: 20px 10%;
         }
         a {
             color: orange;
@@ -43,17 +44,20 @@
             list-style: square inside url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Ccircle cx="50" cy="50" r="50" fill="limegreen" /%3E%3C/svg%3E');
             padding: 20px;
             border: 10px dashed red;
+            margin: 20px;
         }
         li {
-            margin: 15px 0;
+            margin: 20px 0;
             transform: skew(15deg);
         }
         button {
-            font-size: 3rem;
+            font-size: 2.5rem;
             background: repeating-linear-gradient(45deg, red, yellow, blue, red 10px);
             border: 5px dotted white;
             cursor: crosshair;
             animation: pulse 1s infinite alternate;
+            margin: 20px;
+            padding: 10px 20px;
         }
         button:hover {
             transform: scale(1.2) rotate(15deg);
@@ -80,6 +84,16 @@
     </ul>
 
     <button onclick="alert('Boom! Dein PC explodiert! 💥 (nicht wirklich)')">Drück mich NICHT!</button>
+
+    <!-- Lustiger Button mit Link zu YouTube -->
+    <button onclick="window.location.href='https://www.youtube.com/'">
+        🚀 Schick mich nach YouTube!
+    </button>
+
+    <!-- Rickroll-Button -->
+    <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">
+        🎶 Überraschung! 🎶
+    </button>
 
     <p id="more-info">Noch mehr unnütze Infos: Diese Website enthält genau NULL nützliche Informationen. Aber hey, das hat dich nicht davon abgehalten, bis hier zu scrollen! 😂</p>
 </body>
