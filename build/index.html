@@ -1,1 +1,86 @@
-<h1>Das ist unser tolles Projekt</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Worst Website Ever!</title>
+    <style>
+        /* Grauenhafte Farbwahl, schreckliche Fonts und ein komplett überladenes Design */
+        body {
+            background-color: hotpink;
+            color: limegreen;
+            font-family: "Comic Sans MS", "Papyrus", cursive;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 5rem;
+            text-shadow: 5px 5px 10px yellow, -5px -5px 10px cyan;
+            animation: spin 5s linear infinite;
+        }
+        p {
+            font-size: 2rem;
+            line-height: 0.5;
+            letter-spacing: 5px;
+            margin: 0 10%;
+        }
+        a {
+            color: orange;
+            font-weight: bold;
+            text-decoration: underline wavy purple;
+        }
+        a:hover {
+            background-color: black;
+            color: red;
+            text-decoration: blink;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0); }
+            100% { transform: rotate(360deg); }
+        }
+        ul {
+            list-style: square inside url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Ccircle cx="50" cy="50" r="50" fill="limegreen" /%3E%3C/svg%3E');
+            padding: 20px;
+            border: 10px dashed red;
+        }
+        li {
+            margin: 15px 0;
+            transform: skew(15deg);
+        }
+        button {
+            font-size: 3rem;
+            background: repeating-linear-gradient(45deg, red, yellow, blue, red 10px);
+            border: 5px dotted white;
+            cursor: crosshair;
+            animation: pulse 1s infinite alternate;
+        }
+        button:hover {
+            transform: scale(1.2) rotate(15deg);
+        }
+        @keyframes pulse {
+            from { opacity: 0.5; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Willkommen auf der besten Website aller Zeiten! 🥳</h1>
+    <p>Diese Website ist ein Meisterwerk der Webentwicklung, von jemandem, der einen HTML-Crashkurs nach 2 Minuten abgebrochen hat. 😎</p>
+    <p>Hier ist alles wichtig und nichts hat Sinn. 🚀 Willkommen im Chaos!</p>
+
+    <a href="#more-info">Klicke hier für "wichtige" Infos, die du niemals brauchst!</a>
+
+    <h2>Die Top-Gründe, warum diese Website genial ist:</h2>
+    <ul>
+        <li>Wunderschönes Design (für Leute mit Sonnenbrillen 👓).</li>
+        <li>Optimiert für 90er-Jahre-Monitore.</li>
+        <li>Bestehende aus einer unvergleichbaren Farbsymphonie.</li>
+        <li>Ein lebender Beweis dafür, dass CSS auch böse sein kann.</li>
+    </ul>
+
+    <button onclick="alert('Boom! Dein PC explodiert! 💥 (nicht wirklich)')">Drück mich NICHT!</button>
+
+    <p id="more-info">Noch mehr unnütze Infos: Diese Website enthält genau NULL nützliche Informationen. Aber hey, das hat dich nicht davon abgehalten, bis hier zu scrollen! 😂</p>
+</body>
+</html>
